@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I SPY: A Music Blog</title>
+    <meta name="description" content="An interactive music blog where you spy my favorite tracks.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Syne:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">I SPY MUSIC</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Spy</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="spy-container">
+                <!-- Image will be set as background or img tag here -->
+                <div class="riddle-box">
+                    <p>I spy a headphone, a cassette tape too,<br>Find the hidden tracks waiting for you.</p>
+                </div>
+                <div id="spy-overlay" class="spy-overlay">
+                    <!-- Interactive click areas will be injected here by JS -->
+                </div>
+            </div>
+        </section>
+        <section id="recent-reviews" class="reviews-section">
+            <div class="section-header">
+                <h2>Recent Discoveries</h2>
+            </div>
+            <div class="reviews-grid" id="recent-reviews-grid">
+                <!-- Recent 3 reviews will be populated here by JS -->
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="reviews.html"
+                    style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--accent-color); text-decoration: underline;">View
+                    All Reviews</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 I SPY Music Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
